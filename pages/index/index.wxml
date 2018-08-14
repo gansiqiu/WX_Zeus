@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+   <view class="">
+      <text>课程名</text>
+      <text>作业详情</text>
+   </view>
+   <view class="">
+      <text class="">{{motto}}</text>
+   </view>
+</view>
