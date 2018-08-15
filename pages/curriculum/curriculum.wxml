@@ -8,8 +8,8 @@
    <view class='assignment_view'>
       <view class="assignment" wx:for="{{dataList}}" wx:for-item='item'>
          <text class='assignment_name'>{{item.name}}</text>
-         <button class='assignmentManage_btn' type='primary' size='mini' data-assignment-id="{{item.id}}" catchtap='checkAssignmentManage'>查看</button>
-         <button class='assignmentSubmission_btn' type='primary' size='mini' data-assignment-id="{{item.id}}" catchtap='checkAssignmentSubmission'>查看</button>
+         <button class='assignmentManage_btn' type='primary' size='mini' data-curriculum-id="{{item.id}}" catchtap='checkAssignmentManage'>查看</button>
+         <button class='assignmentSubmission_btn' type='primary' size='mini' data-curriculum-id="{{item.id}}" catchtap='checkAssignmentSubmission'>查看</button>
       </view>
    </view>
 </view>

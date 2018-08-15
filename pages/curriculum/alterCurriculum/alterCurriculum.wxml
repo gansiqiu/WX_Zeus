@@ -1,0 +1,5 @@
+<!--pages/curriculum/alterCurriculumManage/alterCurriculumManage.wxml-->
+<text>pages/curriculum/alterCurriculumManage/alterCurriculumManage.wxml</text>
+<view>
+  <input placeholder="这是一个可以自动聚焦的input" type='text'  auto-focus/>
+</view>
