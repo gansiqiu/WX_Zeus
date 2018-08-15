@@ -1,0 +1,4 @@
+<!--pages/alterCurriculum/alterCurriculum.wxml-->
+<view>
+   <text>新建课程</text>
+</view>
