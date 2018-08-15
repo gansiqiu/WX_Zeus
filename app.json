@@ -1,5 +1,7 @@
 {
    "pages": [
+      "pages/curriculumManage/curriculumManage",
+      "pages/alterCurriculum/alterCurriculum"
    ],
    "window": {
       "backgroundTextStyle": "light",
