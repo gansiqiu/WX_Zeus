@@ -1,0 +1,30 @@
+.assignment_header{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   align-items: center;
+}
+.assignment_student_name{
+   width: 400rpx;
+   text-align: center;
+}
+.assignment_detail{
+   width: 200rpx;
+   background: gray;
+   text-align: center;
+   margin-left: 5%;
+}
+
+.assignment_container{
+   display: flex;
+   flex-direction: column;
+}
+.assignment_list{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+.assignment_list_name{
+   width: 400rpx;
+   text-align: center;
+}

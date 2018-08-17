@@ -6,10 +6,13 @@
       <text class="assignment_Submission">提交情况</text>
    </view>
    <view class='assignment_view'>
-      <view class="assignment" wx:for="{{dataList}}" wx:for-item='item'>
-         <text class='assignment_name'>{{item.name}}</text>
-         <button class='assignmentManage_btn' type='primary' size='mini' data-curriculum-id="{{item.id}}" catchtap='checkAssignmentManage'>查看</button>
-         <button class='assignmentSubmission_btn' type='primary' size='mini' data-curriculum-id="{{item.id}}" catchtap='checkAssignmentSubmission'>查看</button>
-      </view>
+      <block wx:for="{{dataList}}" wx:for-item='item'>
+         <view class="assignment">
+            <text class='assignment_name'>{{item.name}}</text>
+            <button class='assignmentManage_btn' type='primary' size='mini' data-curriculum-id="{{item.id}}" catchtap='checkAssignmentManage'>查看</button>
+            <button class='assignmentSubmission_btn' type='primary' size='mini' data-curriculum-id="{{item.id}}" catchtap='checkAssignmentSubmission'>查看</button>
+         </view>
+      </block>
    </view>
+   <!-- <web-view src="http://localhost:8080/#/"></web-view> -->
 </view>

@@ -1,10 +1,10 @@
 <!--pages/alterCurriculum/alterCurriculum.wxml-->
 <view class='container'>
    <button  type='primary' plain="ture" size='mini' catchtap='createCurriculum'>新建</button>
-   <view class='assignment_view'>
-      <view class="assignment" wx:for="{{dataList}}" wx:for-item='item'>
-         <text class='assignment_name'>{{item.name}}</text>
-         <button class='assignmentManage_btn' type='primary' size='mini' data-curriculum-id="{{item.id}}" catchtap='changeCurriculum'>修改</button>
+   <view class='curriculum_view'>
+      <view class="curriculum" wx:for="{{dataList}}" wx:for-item='item'>
+         <text class='curriculum_name'>{{item.name}}</text>
+         <button class='alterCurriculum_btn' type='primary' size='mini' data-curriculum-id="{{item.id}}" catchtap='changeCurriculum'>修改</button>
       </view>
    </view>
 </view>
