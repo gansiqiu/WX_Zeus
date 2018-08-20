@@ -1,21 +1,29 @@
 /* pages/alterCurriculum/alterCurriculum.wxss */
-/**index.wxss**/
+.opt_list{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   margin: 40rpx;
+}
+.change_btn{
+   width: 33%;
+   text-align: center;
+}
+button{
+   width: 100%;
+}
 
-.curriculum_view{
+.curriculum_list{
    display: flex;
    flex-direction: column;
+   background: gray;
    width: 90%;
-}
-.curriculum{
-   width: 100%;
-   display: flex;
-   flex-direction: row; 
-   align-items:center;
-   margin-top: 20rpx;
-   padding-bottom: 10px;
-   border-bottom: solid 1px black;
+   height: auto;
 }
 .curriculum_name{
-   width: 375rpx;
-   text-align: center;
-} 
+   text-indent: 2em;
+}
+.curriculum_introduce{
+   text-indent: 2em;
+   margin-top: 40rpx;
+}

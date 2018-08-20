@@ -5,28 +5,12 @@
       <text class='assignment_student_name'>学生</text>
       <text class='assignment_detail'>作业详情</text>
    </view>
-   <!-- 数据列表 -->
+   <!-- 数据列表:学生作业详情 -->
    <view class='assignment_container'>
-      <block>
+      <block wx:for="{{dataList}}" wx:for-item="item">
          <view class='assignment_list'>
-            <text class='assignment_list_name'>学生</text>
-            <button type='primary' size='mini'>查看</button>
-         </view>
-         <view>
-            <text>学生1</text>
-            <button>查看</button>
-         </view>
-         <view>
-            <text>学生1</text>
-            <button>查看</button>
-         </view>
-         <view>
-            <text>学生1</text>
-            <button>查看</button>
-         </view>
-         <view>
-            <text>学生1</text>
-            <button>查看</button>
+            <text class='assignment_list_name'>{{item.name}}</text>
+            <button class='assignment_list_btn' catchtap='checkDetail' data-assignment-id="{{item.assignmentId}}" data-student-id='{{item.id}}' type='primary' size='mini'>查看</button>
          </view>
       </block>
    </view>

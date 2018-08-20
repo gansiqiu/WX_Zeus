@@ -1,1 +1,27 @@
 /* pages/curriculum/alterCurriculumManage/alterCurriculumManage.wxss */
+.name_container{
+   width: 80%;
+   background: tan;
+   margin: 40rpx auto 10rpx;
+   padding: 10rpx;
+}
+.name_text{
+   width: 100rpx;
+   margin-left: 80rpx;
+}
+.name_input{
+   width: 100%;
+}
+.abstract_container{
+   width: 80%;
+   margin: 20rpx auto;
+   padding: 10rpx;
+}
+.abstract_text{
+   width: 100rpx;
+   margin-left: 80rpx;
+}
+.abstract_input{
+   background: tan;
+   width: 100%;
+}

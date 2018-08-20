@@ -1,5 +1,12 @@
 <!--pages/curriculum/alterCurriculumManage/alterCurriculumManage.wxml-->
-<text>pages/curriculum/alterCurriculumManage/alterCurriculumManage.wxml</text>
-<view>
-  <input placeholder="这是一个可以自动聚焦的input" type='text'  auto-focus/>
+<view class='container'> 
+   <view class='name_container'>
+      <text class='name_text'>课程名*</text>
+      <input class='name_input' placeholder="请输入课程名" type='text' auto-focus/>
+   </view>
+   <view class='abstract_container'>
+      <text class='abstract_text'>课程简介</text>
+      <textarea class='abstract_input' placeholder="请输入简介" type='text'/>
+   </view>
+   <button type='primary' plain="ture" size='mini'>提交</button>
 </view>

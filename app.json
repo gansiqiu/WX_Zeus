@@ -1,14 +1,16 @@
 {
    "pages": [
-      "pages/assignment/assignmentManage/assignmentManage",
       "pages/curriculum/curriculum",
-      "pages/curriculum/curriculumManage/curriculumManage",
+      "pages/myInformation/myInformation",
       "pages/curriculum/alterCurriculum/alterCurriculum",
-      "pages/assignment/assignmentSubmission/assignmentSubmission"
+      "pages/curriculum/curriculumManage/curriculumManage",
+      "pages/assignment/assignmentManage/assignmentManage",
+      "pages/assignment/assignmentSubmission/assignmentSubmission",
+      "pages/assignment/assignmentDetail/assignmentDetail"
    ],
    "window": {
       "backgroundTextStyle": "light",
-      "navigationBarBackgroundColor": "#fff",
+      "navigationBarBackgroundColor": "#EFEFEF",
       "navigationBarTitleText": "图钉墙",
       "backgroundColor": "#eeeeee",
       "navigationBarTextStyle": "black"
@@ -19,11 +21,11 @@
       "list": [
          {
             "pagePath": "pages/curriculum/curriculum",
-            "text": "所有课程"
+            "text": "课程"
          },
          {
-            "pagePath": "pages/curriculum/curriculumManage/curriculumManage",
-            "text": "课程管理"
+            "pagePath": "pages/myInformation/myInformation",
+            "text": "我的"
          }
       ]
    }

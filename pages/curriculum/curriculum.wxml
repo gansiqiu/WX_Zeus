@@ -1,18 +1,14 @@
 <!--index.wxml-->
 <view class="container">
-   <view class="curriculum_header">
-      <text class="curriculum_name">课程名</text>
-      <text class="assignment_Manage">详情</text>
-      <text class="assignment_Submission">提交情况</text>
-   </view>
-   <view class='assignment_view'>
+   <view class='curriculum_view'>
       <block wx:for="{{dataList}}" wx:for-item='item'>
-         <view class="assignment">
-            <text class='assignment_name'>{{item.name}}</text>
-            <button class='assignmentManage_btn' type='primary' size='mini' data-curriculum-id="{{item.id}}" catchtap='checkAssignmentManage'>查看</button>
-            <button class='assignmentSubmission_btn' type='primary' size='mini' data-curriculum-id="{{item.id}}" catchtap='checkAssignmentSubmission'>查看</button>
+         <view class="curriculum_list" data-curriculum-name='{{item.name}}' catchtap='goCurriculumDetail'>
+            <image class='curriculum_img' mode='aspectFit' src='../../images/logo.png'></image>
+            <view class='curriculum_info'>
+               <text class='curriculum_name'>{{item.name}}</text>
+               <text class='curriculum_createTime'>{{item.createTime}}</text>
+            </view>
          </view>
       </block>
    </view>
-   <!-- <web-view src="http://localhost:8080/#/"></web-view> -->
 </view>

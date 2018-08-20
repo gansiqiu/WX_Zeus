@@ -1,28 +1,18 @@
-// pages/assignment/assignmentSubmission/assignmentSubmission.js
+// pages/assignment/assignmentDetail/assignmentDetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-     totalNum:60,
-     deliveryNum:50,
-     nondeliveryNum:10
+  
   },
-   checkAssignmentDetail:function(event){
-      console.log(event);
-      wx.navigateTo({
-         url: '/pages/assignment/assignmentDetail/assignmentDetail',
-      })
-   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-     wx.setNavigationBarTitle({
-        title: '作业提交情况',
-     })
+  
   },
 
   /**

@@ -1,10 +1,19 @@
 <!--pages/alterCurriculum/alterCurriculum.wxml-->
+<!-- 课程作业详情 -->
 <view class='container'>
-   <button  type='primary' plain="ture" size='mini' catchtap='createCurriculum'>新建</button>
-   <view class='curriculum_view'>
-      <view class="curriculum" wx:for="{{dataList}}" wx:for-item='item'>
-         <text class='curriculum_name'>{{item.name}}</text>
-         <button class='alterCurriculum_btn' type='primary' size='mini' data-curriculum-id="{{item.id}}" catchtap='changeCurriculum'>修改</button>
+   <view class='opt_list'>
+      <view class='change_btn'>
+         <button type='primary' size='mini' plain data-curriculum-id='2' catchtap='changeCurriculum'>修改</button>
       </view>
+      <view class='change_btn'>
+         <button type='primary' size='mini' plain data-curriculum-id='2' catchtap='goAssignmentManage'>课程作业详情</button>
+      </view>
+      <view class='change_btn'>
+         <button type='primary' size='mini' plain data-curriculum-id='2' catchtap='goAssignmentSubmission'>作业提交详情</button>
+      </view>
+   </view>
+   <view class='curriculum_list'>
+      <text class='curriculum_name'>课程名称:</text>
+      <text class='curriculum_introduce'>课程介绍:</text>
    </view>
 </view>

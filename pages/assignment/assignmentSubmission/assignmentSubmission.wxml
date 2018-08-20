@@ -1,2 +1,47 @@
 <!--pages/assignment/assignmentSubmission/assignmentSubmission.wxml-->
-<text>pages/assignment/assignmentSubmission/assignmentSubmission.wxml</text>
+<view>
+   <view>该课程总人数：{{totalNum}}</view>
+   <view class='delivery_user_group'>
+      <view>已交人数：{{deliveryNum}}</view>
+      <view class='deliveryuser_list' data-assignment-id='1' data-student-id='1' catchtap='checkAssignmentDetail'>
+         <image class='deliveryuser_img' src='/images/userIcon.png'></image>
+         <text class='deliveryuser_name'>用户1</text>
+      </view>
+      <view class='deliveryuser_list'  data-assignment-id='1' data-student-id='1' catchtap='checkAssignmentDetail'>
+         <image class='deliveryuser_img' src='/images/userIcon.png'></image>
+         <text class='deliveryuser_name'>用户1</text>
+      </view>
+      <view class='deliveryuser_list'  data-assignment-id='1' data-student-id='1' catchtap='checkAssignmentDetail'>
+         <image class='deliveryuser_img' src='/images/userIcon.png'></image>
+         <text class='deliveryuser_name'>用户1</text>
+      </view>
+      <view class='deliveryuser_list'  data-assignment-id='1' data-student-id='1' catchtap='checkAssignmentDetail'>
+         <image class='deliveryuser_img' src='/images/userIcon.png'></image>
+         <text class='deliveryuser_name'>用户1</text>
+      </view>
+      <view class='deliveryuser_list'  data-assignment-id='1' data-student-id='1' catchtap='checkAssignmentDetail'>
+         <image class='deliveryuser_img' src='/images/userIcon.png'></image>
+         <text class='deliveryuser_name'>用户1</text>
+      </view>
+   </view>
+   <view class='clear'></view>
+   <view class='nondelivery_user_group'>
+      <view>未交人数：{{nondeliveryNum}}</view>
+      <view class='nondeliveryuser_list'>
+         <image class='nondeliveryuser_img' src='/images/userIcon.png'></image>
+         <text class='nondeliveryuser_name'>用户1</text>
+      </view>
+      <view class='nondeliveryuser_list'>
+         <image class='nondeliveryuser_img' src='/images/userIcon.png'></image>
+         <text class='nondeliveryuser_name'>用户1</text>
+      </view>
+      <view class='nondeliveryuser_list'>
+         <image class='nondeliveryuser_img' src='/images/userIcon.png'></image>
+         <text class='nondeliveryuser_name'>用户1</text>
+      </view>
+      <view class='nondeliveryuser_list'>
+         <image class='nondeliveryuser_img' src='/images/userIcon.png'></image>
+         <text class='nondeliveryuser_name'>用户1</text>
+      </view>
+   </view>
+</view>

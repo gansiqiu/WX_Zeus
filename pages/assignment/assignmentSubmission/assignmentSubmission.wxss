@@ -1,1 +1,57 @@
 /* pages/assignment/assignmentSubmission/assignmentSubmission.wxss */
+
+.delivery_user_group {
+   padding: 40rpx 20rpx;
+}
+
+.deliveryuser_list {
+   display: flex;
+   flex-direction: column;
+   width: 150rpx;
+   height: 200rpx;
+   float: left;
+   margin-left: 10rpx;
+}
+
+.deliveryuser_img {
+   width: 150rpx;
+   height: 150rpx;
+   margin-left: 20rpx;
+}
+
+.deliveryuser_name {
+   width: 150rpx;
+   height: 100rpx;
+   text-align: center;
+   margin-left: 20rpx;
+}
+
+.clear {
+   clear: both;
+}
+
+.nondelivery_user_group {
+   padding: 40rpx 20rpx;
+}
+
+.nondeliveryuser_list {
+   display: flex;
+   flex-direction: column;
+   width: 150rpx;
+   height: 200rpx;
+   float: left;
+   margin-left: 10rpx;
+}
+
+.nondeliveryuser_img {
+   width: 150rpx;
+   height: 150rpx;
+   margin-left: 20rpx;
+}
+
+.nondeliveryuser_name {
+   width: 150rpx;
+   height: 100rpx;
+   text-align: center;
+   margin-left: 20rpx;
+}
