@@ -1,1 +1,9 @@
 /* pages/myInformation/myInformation.wxss */
+.user_container{
+   display: flex;
+   flex-direction: column;
+   padding: 40rpx;
+}
+.user_role{
+   margin-top: 40rpx;
+}

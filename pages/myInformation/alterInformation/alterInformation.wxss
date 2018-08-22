@@ -1,0 +1,6 @@
+/* pages/myInformation/alterInformation/alterInformation.wxss */
+.demo-container{
+   height: 1208rpx;
+   width: 400rpx;
+   background: white;
+}

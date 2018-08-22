@@ -18,17 +18,12 @@ Page({
          url: '/pages/curriculum/curriculumManage/curriculumManage?curriculumId='+event.currentTarget.dataset.curriculumName,
       })
    },
-   onLoad:function(){
-      // var that = this;
-      // wx.request({
-      //    url: 'http://localhost:8080/Zeus/curriculum/getCurriculumListByPage',
-      //    data:this.data.aoData,
-      //    success:function(res){
-      //       console.log(res);
-      //       that.setData({
-      //          dataList:res.data.object.list
-      //       })
-      //    }
-      // })
+   createClick:function(event){
+      wx.navigateTo({
+         url: '/pages/curriculum/alterCurriculum/alterCurriculum',
+      })
+   },
+   onLoad:function(options){
+      
    }
 })

@@ -1,2 +1,15 @@
 <!--pages/myInformation/myInformation.wxml-->
-<text>pages/myInformation/myInformation.wxml</text>
+<view class='user_container'>
+   <i-button bind:click="changeUserInfo" type="error">修改</i-button>
+
+   <i-input value="{{ value1 }}" title="账号" disabled />
+   <i-input value="{{ value2 }}" title="密码" disabled />
+   <i-input value="{{ value3 }}" title="真实姓名" disabled />
+   <i-input value="{{ value4 }}" title="绰号" disabled />
+   <i-input value="{{ value5 }}" title="手机号码" disabled />
+   <i-input value="{{ value6 }}" title="角色" disabled />
+   <i-input value="{{ value7 }}" title="院校名称" disabled />
+   <i-input value="{{ value8 }}" title="学院名称" disabled />
+
+
+</view>

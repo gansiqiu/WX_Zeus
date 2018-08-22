@@ -1,17 +1,8 @@
 <!--pages/assignment/assignmentManage/assignmentManage.wxml-->
 <view class='container'>
-   <!-- 列表头部 -->
-   <view class='assignment_header'>
-      <text class='assignment_student_name'>学生</text>
-      <text class='assignment_detail'>作业详情</text>
-   </view>
    <!-- 数据列表:学生作业详情 -->
-   <view class='assignment_container'>
-      <block wx:for="{{dataList}}" wx:for-item="item">
-         <view class='assignment_list'>
-            <text class='assignment_list_name'>{{item.name}}</text>
-            <button class='assignment_list_btn' catchtap='checkDetail' data-assignment-id="{{item.assignmentId}}" data-student-id='{{item.id}}' type='primary' size='mini'>查看</button>
-         </view>
-      </block>
-   </view>
+   <i-cell-group wx:for="{{dataList}}" wx:for-item="item">
+      <i-cell title="{{item.name}}" is-link value="查看" catchtap='checkDetail'></i-cell>
+   </i-cell-group>
+
 </view>

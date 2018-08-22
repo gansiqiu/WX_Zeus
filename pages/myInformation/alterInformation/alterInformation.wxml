@@ -1,0 +1,50 @@
+<!--pages/myInformation/alterInformation/alterInformation.wxml-->
+<view>
+   <i-panel title="基础用法">
+      <i-input value="{{ value1 }}" title="账号" placeholder="请输入邮箱" />
+      <i-input value="{{ value2 }}" type='password' title="密码" placeholder="请输入不少于6个字符" />
+      <i-input value="{{ value2 }}" title="真实姓名" placeholder="请输入姓名" />
+      <i-input value="{{ value2 }}" title="绰号" placeholder="请输入绰号" />
+      <i-input value="{{ value2 }}" type='number' title="手机号码" placeholder="请输入手机号码" />
+      <!-- 角色选择 -->
+      <i-button bind:click="selectRole" type="ghost" size='small'>{{roleText}}</i-button>
+      <i-drawer mode="right" visible="{{showRoll}}" bind:close="selectRole" mask-closable="{{false}}">
+         <view class="demo-container">
+            <i-cell-group>
+               <i-cell title="超级管理员" data-role-id="0" data-role-name="超级管理员" bind:click="roleTap"></i-cell>
+               <i-cell title="管理员" data-role-id="1" data-role-name="管理员" bind:click="roleTap"></i-cell>
+               <i-cell title="老师" data-role-id="2" data-role-name="老师" bind:click="roleTap"></i-cell>
+               <i-cell title="学生" data-role-id="3" data-role-name="学生" bind:click="roleTap"></i-cell>
+            </i-cell-group>
+         </view>
+      </i-drawer>
+      <!-- 学校选择 -->
+      <i-button bind:click="selectSchool" type="ghost" size='small'>{{schoolText}}</i-button>
+      <i-drawer mode="right" visible="{{showSchool}}" bind:close="selectSchool" mask-closable="{{false}}">
+         <view class="demo-container">
+            <i-cell-group>
+               <i-cell title="北京大学" data-school-id="0" data-school-name="北京大学" bind:click="schoolTap"></i-cell>
+               <i-cell title="清华大学" data-school-id="1" data-school-name="清华大学" bind:click="schoolTap"></i-cell>
+               <i-cell title="湖南大学" data-school-id="2" data-school-name="湖南大学" bind:click="schoolTap"></i-cell>
+               <i-cell title="武汉大学" data-school-id="3" data-school-name="武汉大学" bind:click="schoolTap"></i-cell>
+            </i-cell-group>
+         </view>
+      </i-drawer>
+      <!-- 学院选择 -->
+      <i-button bind:click="selectAcademy" type="ghost" size='small' disabled="{{academyDisabled}}">{{academyText}}</i-button>
+      <i-drawer mode="right" visible="{{showAcademy}}" bind:close="selectAcademy" mask-closable="{{false}}">
+         <view class="demo-container">
+            <i-cell-group>
+               <i-cell title="艺术设计学院" data-academy-id="0" data-academy-name="艺术设计学院" bind:click="academyTap"></i-cell>
+               <i-cell title="物电院" data-academy-id="1" data-academy-name="物电院" bind:click="academyTap"></i-cell>
+               <i-cell title="数学院" data-academy-id="2" data-academy-name="数学院" bind:click="academyTap"></i-cell>
+               <i-cell title="化工院" data-academy-id="3" data-academy-name="化工院" bind:click="academyTap"></i-cell>
+            </i-cell-group>
+         </view>
+      </i-drawer>
+   </i-panel>
+   <i-button bind:click="submit" type="info" size='small'>提交</i-button>
+   <i-modal title="修改信息" visible="{{ visible }}" data-user-id="1" actions="{{ actions }}" bind:click="handleClick">
+      <view>确定修改个人信息？</view>
+   </i-modal>
+</view>

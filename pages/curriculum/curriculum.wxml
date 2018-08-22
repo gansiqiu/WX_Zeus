@@ -1,14 +1,8 @@
 <!--index.wxml-->
 <view class="container">
-   <view class='curriculum_view'>
-      <block wx:for="{{dataList}}" wx:for-item='item'>
-         <view class="curriculum_list" data-curriculum-name='{{item.name}}' catchtap='goCurriculumDetail'>
-            <image class='curriculum_img' mode='aspectFit' src='../../images/logo.png'></image>
-            <view class='curriculum_info'>
-               <text class='curriculum_name'>{{item.name}}</text>
-               <text class='curriculum_createTime'>{{item.createTime}}</text>
-            </view>
-         </view>
-      </block>
-   </view>
+   <i-button class='createBtn' bind:click="createClick" type='info'>新建</i-button>
+   <block wx:for="{{dataList}}" wx:for-item='item'>
+      <i-card title="{{item.name}}" extra="{{item.createTime}}" data-curriculum-name='{{item.name}}' catchtap='goCurriculumDetail' thumb="https://i.loli.net/2017/08/21/599a521472424.jpg"></i-card>
+   </block>
+
 </view>

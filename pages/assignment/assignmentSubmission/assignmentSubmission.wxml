@@ -1,8 +1,10 @@
 <!--pages/assignment/assignmentSubmission/assignmentSubmission.wxml-->
 <view>
-   <view>该课程总人数：{{totalNum}}</view>
+   <i-row>
+      <i-col span="14" offset="5" i-class="col-class" style="text-align:center;">该课程总人数：{{totalNum}}</i-col>
+   </i-row>
+   <i-divider color="#19be6b" lineColor="#19be6b" size="16">已交人数：{{deliveryNum}}</i-divider>
    <view class='delivery_user_group'>
-      <view>已交人数：{{deliveryNum}}</view>
       <view class='deliveryuser_list' data-assignment-id='1' data-student-id='1' catchtap='checkAssignmentDetail'>
          <image class='deliveryuser_img' src='/images/userIcon.png'></image>
          <text class='deliveryuser_name'>用户1</text>
@@ -24,9 +26,8 @@
          <text class='deliveryuser_name'>用户1</text>
       </view>
    </view>
-   <view class='clear'></view>
+   <i-divider color="#ed3f14" lineColor="#ed3f14" size="16">未交作业学生：{{nondeliveryNum}}</i-divider>
    <view class='nondelivery_user_group'>
-      <view>未交人数：{{nondeliveryNum}}</view>
       <view class='nondeliveryuser_list'>
          <image class='nondeliveryuser_img' src='/images/userIcon.png'></image>
          <text class='nondeliveryuser_name'>用户1</text>

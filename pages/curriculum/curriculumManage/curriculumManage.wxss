@@ -3,27 +3,12 @@
    display: flex;
    flex-direction: row;
    width: 100%;
-   margin: 40rpx;
+   margin: 20rpx;
 }
 .change_btn{
-   width: 33%;
    text-align: center;
 }
 button{
    width: 100%;
 }
 
-.curriculum_list{
-   display: flex;
-   flex-direction: column;
-   background: gray;
-   width: 90%;
-   height: auto;
-}
-.curriculum_name{
-   text-indent: 2em;
-}
-.curriculum_introduce{
-   text-indent: 2em;
-   margin-top: 40rpx;
-}

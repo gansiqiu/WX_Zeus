@@ -1,12 +1,9 @@
 <!--pages/curriculum/alterCurriculumManage/alterCurriculumManage.wxml-->
 <view class='container'> 
-   <view class='name_container'>
-      <text class='name_text'>课程名*</text>
-      <input class='name_input' placeholder="请输入课程名" type='text' auto-focus/>
-   </view>
-   <view class='abstract_container'>
-      <text class='abstract_text'>课程简介</text>
-      <textarea class='abstract_input' placeholder="请输入简介" type='text'/>
-   </view>
-   <button type='primary' plain="ture" size='mini'>提交</button>
+   <i-panel title="课程信息">
+      <i-input value="{{ name }}" title="课程名" autofocus placeholder="请输入课程名" />
+      <i-input value="{{ abstract }}" type="textarea" title="课程简介" placeholder="请输入课程简介" />
+   </i-panel>
+   
+   <i-button bind:click="submit" type="primary">提交</i-button>
 </view>
