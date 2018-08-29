@@ -1,8 +1,13 @@
 <!--pages/assignment/assignmentManage/assignmentManage.wxml-->
 <view class='container'>
    <!-- 数据列表:学生作业详情 -->
-   <i-cell-group wx:for="{{dataList}}" wx:for-item="item">
+   <!-- <i-cell-group wx:for="{{dataList}}" wx:for-item="item">
       <i-cell title="{{item.name}}" is-link value="查看" catchtap='checkDetail'></i-cell>
-   </i-cell-group>
-
+   </i-cell-group> -->
+   <view class="list-item">
+      <view class="list-check"  wx:for="{{dataList}}" wx:for-item="item">
+         <image class="list-image radius" mode="aspectFill" src="http://s2.mogucdn.com/new1/v1/bdefaultavatar/04.jpg"></image>
+         <wxc-list class="item" title="{{item.name}}" detail="内容描述" bind:click="checkDetail"></wxc-list>
+      </view>
+   </view>
 </view>

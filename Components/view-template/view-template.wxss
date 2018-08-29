@@ -1,0 +1,8 @@
+.inner {
+  color: red;
+}
+.dataImage{
+   margin: 6rpx;
+   width: 180rpx;
+   height: 180rpx;
+}

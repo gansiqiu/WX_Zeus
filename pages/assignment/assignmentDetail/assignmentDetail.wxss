@@ -1,1 +1,6 @@
 /* pages/assignment/assignmentDetail/assignmentDetail.wxss */
+
+.input-wrap {
+   position: relative;
+   margin: 20rpx 10rpx 0 10rpx;
+}

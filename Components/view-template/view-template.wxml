@@ -1,0 +1,13 @@
+<view class="inner">
+   <i-card title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+      <view slot="content">
+         <view class='dataView'>
+            <block>
+               <image class='dataImage' src='{{item.imgUrl}}' bindtap='itemTap' data-view-id="{{item.id}}" wx:for="{{dataList}}" wx:for-item="item"></image>
+            </block>
+         </view>
+      </view>
+   </i-card>
+   {{innerText.id}}
+   
+</view>

@@ -1,0 +1,17 @@
+Component({
+   properties:{
+      innerText:{
+         type:Object,
+         value:''
+      },
+      dataList:{
+         type:Array,
+         value:''
+      }
+   },
+   methods:{
+      itemTap:function(event){
+         console.log(event.currentTarget.dataset.viewId);
+      }
+   }
+})

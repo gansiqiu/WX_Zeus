@@ -1,2 +1,24 @@
 <!--pages/assignment/assignmentDetail/assignmentDetail.wxml-->
-<text>pages/assignment/assignmentDetail/assignmentDetail.wxml</text>
+<import src="../Components/view-template/view-template.wxml" />
+<view class="input-wrap">
+   <wxc-input type="text" icon="search" placeholder="搜索从这里开始">
+   </wxc-input>
+   <i-tabs current="{{currentTab}}" bindchange="handleChange">
+      <i-tab key="0" title="选项1">选项111111111</i-tab>
+      <i-tab key="1" title="选项2">选项2222222222</i-tab>
+      <i-tab key="2" title="选项3">选项3333333333</i-tab>
+   </i-tabs>
+
+   <swiper current="{{currentTab}}" bindchange="bindchange" style="text-align:center;height: {{autoHeight}}px;">
+      <block wx:for="{{dataList}}" wx:for-item="item">
+         <swiper-item>
+            <view>
+               <view-template inner-text="{{item.name}}" dataList="{{item}}"></view-template>
+            </view>
+         </swiper-item>
+      </block>
+      <view class="container" wx:if="{{showLoadMore}}">
+         <i-spin fix></i-spin>
+      </view>
+   </swiper>
+</view>

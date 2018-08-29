@@ -1,12 +1,12 @@
 {
    "pages": [
+      "pages/assignment/assignmentDetail/assignmentDetail",
       "pages/curriculum/curriculum",
       "pages/myInformation/myInformation",
       "pages/curriculum/alterCurriculum/alterCurriculum",
       "pages/curriculum/curriculumManage/curriculumManage",
       "pages/assignment/assignmentSubmission/assignmentSubmission",
       "pages/assignment/assignmentManage/assignmentManage",
-      "pages/assignment/assignmentDetail/assignmentDetail",
       "pages/myInformation/alterInformation/alterInformation"
    ],
    "window": {
