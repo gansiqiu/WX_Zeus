@@ -33,14 +33,14 @@ Page({
    handleChange: function(event) {
       this.setData({
          currentTab: event.detail.key,
-         autoHeight: this.data.dataList[event.detail.key].length * 100,
+         autoHeight: this.data.dataList[event.detail.key].length * 120,
          showLoadMore: false
       })
    },
    bindchange: function(event) {
       this.setData({
          currentTab: event.detail.current,
-         autoHeight: this.data.dataList[event.detail.current].length * 100,
+         autoHeight: this.data.dataList[event.detail.current].length * 120,
          showLoadMore: false
       })
       // console.log(this.data.autoHeight);
@@ -50,7 +50,7 @@ Page({
     */
    onLoad: function(options) {
       this.setData({
-         autoHeight: this.data.dataList[0].length * 100,
+         autoHeight: this.data.dataList[0].length * 120,
          showLoadMore: false
       })
       // console.log(this.data.autoHeight);
